@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fbf6e7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fbf6e7;
+}
+header > nav {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header nav a {
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+}
+header > nav > a:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+header.logo {
+  width: 80px;
+  justify-content: left;
+}
+header .logo img {
+  width: 80px;
+  border-radius: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .tarjetas, main .tarjetas1 {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+main .tarjetas:hover, main .tarjetas1:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+main .tarjetas img, main .tarjetas1 img {
+  width: 100%;
+  height: fit-content;
+}
+
+.carrousel {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: transform 0.1s ease;
+}
+
+.cuadromisses {
+  margin: 20px;
+  padding: 5%;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  grid-template-areas: "area1 area2 area5 area3" "area1 area2 area5 area3" "area7 area6 area8 area4" "area7 area6 area8 area4" "area7 area6 area8 area4";
+}
+.miss {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.cuadromisses .miss:hover {
+  box-shadow: 0 8px 16px rgba(0, 0.2, 0.2, 0.2);
+}
+
+.area {
+  border-radius: 60px;
+}
+
+#area1 {
+  grid-area: area1;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#area2 {
+  grid-area: area2;
+}
+
+#area3 {
+  grid-area: area3;
+}
+
+#area4 {
+  grid-area: area4;
+}
+
+#area5 {
+  grid-area: area5;
+}
+
+#area6 {
+  grid-area: area6;
+}
+
+#area7 {
+  grid-area: area7;
+}
+
+#area8 {
+  grid-area: area8;
+}
+
+@media (max-width: 768px) {
+  .main {
+    border: 1px solid black;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    /* gap: 10px;*/
+    grid-template-areas: "area1 area2 area5 area3" "area1 area2 area5 area3" "area7 area6 area8 area3" "area7 area6 area8 area4" "area7 area6 area8 area4";
+  }
+}
+@media (max-width: 320px) {
+  .main {
+    border: 1px solid black;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 100px);
+    /* gap: 10px;*/
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7" "area8";
+  }
+}
+.platostipicos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+  gap: 30px;
+}
+
+.primer-div, .segundo-div, .tercer-div, .cuarto-div {
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(yellow, blue, red);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: 80px;
+  border-radius: 20%;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #fbf6e7;
+  color: black;
+  padding: 10px 0;
+}
+
+.footer-social img {
+  max-width: 40px;
+  height: auto;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.platostipicos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+  }
+  
+  .primer-div, .segundo-div, .tercer-div, .cuarto-div {
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(yellow, blue, red);
+  }
+  
